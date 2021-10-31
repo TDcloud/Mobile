@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+    <section>
+        <!-- 头部 -->
+        <header class="header">招聘信息</header>
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <a href="#">
+                <img src="./icons/1.png" alt="HR面试">
+                <span>HR面试</span>
+            </a> <a href="#">
+                <img src="./icons/2.png" alt="HR面试">
+                <span>笔试</span>
+            </a> <a href="#">
+                <img src="./icons/3.png" alt="HR面试">
+                <span>技术面试</span>
+            </a> <a href="#">
+                <img src="./icons/4.png" alt="HR面试">
+                <span>模拟面试</span>
+            </a> <a href="#">
+                <img src="./icons/5.png" alt="HR面试">
+                <span>面试技巧</span>
+            </a> <a href="#">
+                <img src="./icons/6.png" alt="HR面试">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- 横幅 -->
+        <div class="Banners">
+            <a href="#">
+                <img src="./images/Banners.png" alt="横幅">
+            </a>
+        </div>
+    </section>
+    <!-- Swiper1 -->
+    <div class="swiper-card">
+        <div class="swiper">
+            <!-- 左 -->
+            <div class="title_l">
+                <img src="./icons/i1.png" alt="icon">
+                <h4>就业指导</h4>
+            </div>
+            <!-- 右 -->
+            <div class="title_r">
+                <a href="#">
+                    更多>>
+                </a>
+            </div>
+        </div>
+        <div class="swiper_box">
+            <div class="swiper-container swiper-no">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/1.png" alt="">
+                        </a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/2.jpg" alt="">
+                        </a>
+                        <p>前端教学</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/3.jpg" alt="">
+                        </a>
+                        <p>后端教程</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- swiper2 -->
+    <div class="swiper-card2">
+        <div class="swiper-title">
+            <!-- 左 -->
+            <div class="title_l">
+                <img src="./icons/i1.png" alt="icon">
+                <h4>就业指导</h4>
+            </div>
+            <!-- 右 -->
+            <div class="title_r">
+                <a href="#">
+                    更多>>
+                </a>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>改变自己可以吗？为什么那么难</h5>
+                        <div class="font-botton">
+                            <span>156</span>
+                            <p>人学习</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>改变自己可以吗？为什么那么难</h5>
+                        <div class="font-botton">
+                            <span>196</span>
+                            <p>人学习</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>改变自己可以吗？为什么那么难</h5>
+                        <div class="font-botton">
+                            <span>106</span>
+                            <p>人学习</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>改变自己可以吗？为什么那么难</h5>
+                        <div class="font-botton">
+                            <span>19</span>
+                            <p>人学习</p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <a href="#"><img src="./icons/home.png" alt="">
+            <span>首页</span>
+        </a> <a href="#"><img src="./icons/ms.png" alt="">
+            <span>技术面试</span>
+        </a> <a href="#"><img src="./icons/net.png" alt="">
+            <span>模拟面试</span>
+        </a> <a href="#"><img src="./icons/user.png" alt="">
+            <span>我的主页</span>
+        </a>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        // siiper1
+        var swiper = new Swiper('.swiper-no', {
+            // 可见个数
+            slidesPerView: 2,
+            //   每个轮播之间的距离
+            spaceBetween: 30,
+            // 居中显示
+            centeredSlides: true,
+            loop: true,
+            // 箭头
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        // swiper2
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        });
+    </script>
+</body>
+
+</html>

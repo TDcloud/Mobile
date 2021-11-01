@@ -27,7 +27,7 @@ body .nav a {
   align-items: center;
   flex: 33.33%;
   color: #707070;
-  font-size: 0.426667rem;
+  font-size: 0.666667rem;
 }
 body .nav a:nth-child(-n + 3) {
   margin-top: 1.2rem;
